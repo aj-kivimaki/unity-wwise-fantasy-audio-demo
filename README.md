@@ -6,12 +6,12 @@ An interactive game audio portfolio project demonstrating adaptive music, sound 
 
 This project focuses on showcasing:
 
-* Interactive music systems
-* Adaptive music transitions
-* Sound design for gameplay and environments
-* Audio implementation in Unity
-* Wwise integration and middleware workflows
-* Technical audio design concepts such as States, RTPCs, Switches, and Reverb Zones
+- Interactive music systems
+- Adaptive music transitions
+- Sound design for gameplay and environments
+- Audio implementation in Unity
+- Wwise integration and middleware workflows
+- Technical audio design concepts such as States, RTPCs, Switches, and Reverb Zones
 
 ## Demo Structure
 
@@ -26,20 +26,24 @@ The project is intentionally small in scope to allow development effort to focus
 
 ## Technologies
 
-* Unity 6
-* Wwise
-* C#
-* Git
+- Unity 6
+- Wwise
+- C#
+- Git
 
 ## Portfolio Deliverables
 
 This project serves as the foundation for several portfolio pieces:
 
-* Composer Reel
-* Interactive Music Reel
-* Technical Audio Breakdown
-* Cinematic Scoring Reel
+- Composer Reel
+- Interactive Music Reel
+- Technical Audio Breakdown
+- Cinematic Scoring Reel
 
-## Status
+## Current Progress
 
-Work in progress.
+- Unity project created
+- Git workflow established
+- Third-person controller integrated
+- Prototype environment completed
+- Preparing for Wwise integration
