@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{30FDA5BF-CA14-436C-B6E8-48EEB1DD0FD3}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{30FDA5BF-CA14-436C-B6E8-48EEB1DD0FD3}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Weird_Stomp" ID="{05833D54-7367-45E7-A4E6-17AE6BF94C89}">
+					<ChildrenList>
+						<Action Name="" ID="{D375A041-4CE7-4C2B-BE06-919D5B6DB672}" ShortID="411982261">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Weird Stomp" ID="{0D640D9A-138F-413F-A05B-8586950F3F00}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RC_Footsteps_Stone" ID="{8158051C-48B0-485B-97F4-6DD951D60965}">
+					<ChildrenList>
+						<Action Name="" ID="{137D6037-F32D-4F9E-B535-DB2EFD966C5F}" ShortID="200617593">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RC_Footsteps_Stone" ID="{76878166-0183-4C21-A9A9-0BED5A4C4C29}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

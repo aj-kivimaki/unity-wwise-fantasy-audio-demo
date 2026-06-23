@@ -3,7 +3,7 @@ Phase 1 - Foundation
 [x] Environment blockout
 
 Phase 2 - Wwise
-[ ] Wwise integration
+[x] Wwise integration
 
 Phase 3 - Audio Systems
 [ ] Footsteps
