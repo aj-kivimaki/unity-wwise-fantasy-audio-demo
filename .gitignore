@@ -44,3 +44,6 @@ FantasyAudioDemo_Wwise/GeneratedSoundBanks/Windows/
 FantasyAudioDemo_Wwise/GeneratedSoundBanks/Mac/
 
 *.validationcache
+
+Assets/Wwise/
+Wwise/
