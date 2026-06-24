@@ -13,8 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_DUNGEON_AMBIENCE = 2622581939U;
         static const AkUniqueID PLAY_RC_FOOTSTEPS_STONE = 2337602353U;
         static const AkUniqueID PLAY_WEIRD_STOMP = 1858971687U;
+        static const AkUniqueID STOP_DUNGEON_AMBIENCE = 156076713U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

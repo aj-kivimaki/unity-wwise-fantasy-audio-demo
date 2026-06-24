@@ -1,12 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
+	156076713	Stop_Dungeon_Ambience			\Default Work Unit\Ambience\Stop_Dungeon_Ambience	
 	1858971687	Play_Weird_Stomp			\Default Work Unit\Play_Weird_Stomp	
-	2337602353	Play_RC_Footsteps_Stone			\Default Work Unit\Play_RC_Footsteps_Stone	
+	2337602353	Play_RC_Footsteps_Stone			\Default Work Unit\Footsteps\Play_RC_Footsteps_Stone	
+	2622581939	Play_Dungeon_Ambience			\Default Work Unit\Ambience\Play_Dungeon_Ambience	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	45402180	Footstep_04	.cache\C8\{C8F8D1A0-893F-AA73-4C2D-CD1523BBDD0E}.wem		\Containers\Default Work Unit\Footsteps\RC_Footsteps_Stone\Footstep_04		48096
 	289366257	Footstep_07	.cache\21\{21C52D62-D064-5973-5602-9F777F128A2C}.wem		\Containers\Default Work Unit\Footsteps\RC_Footsteps_Stone\Footstep_07		48096
 	350886004	Footstep_02	.cache\C1\{C1004E9E-163E-F5DA-0E5E-8E2066A8AD87}.wem		\Containers\Default Work Unit\Footsteps\RC_Footsteps_Stone\Footstep_02		48096
 	575995961	Footstep_05	.cache\45\{45F0F972-AADF-4851-693E-706F7050D7E8}.wem		\Containers\Default Work Unit\Footsteps\RC_Footsteps_Stone\Footstep_05		48096
+	582322929	Dungeon_Ambience	.cache\E7\{E76657B1-DFE2-0144-E103-2F9BB185E654}.wem		\Containers\Default Work Unit\Ambience\Dungeon\Dungeon_Ambience		3072096
 	591687283	Footstep_06	.cache\38\{389D2014-CB8C-5EB1-F43B-ECF0E948FDEA}.wem		\Containers\Default Work Unit\Footsteps\RC_Footsteps_Stone\Footstep_06		48096
 	636512346	Footstep_08	.cache\79\{790F61FF-FAE7-DBB7-031F-020FAE6A6941}.wem		\Containers\Default Work Unit\Footsteps\RC_Footsteps_Stone\Footstep_08		48096
 	852195882	Footstep_03	.cache\96\{967D9A61-1FAA-17F4-9C0B-5E9E45BD06D9}.wem		\Containers\Default Work Unit\Footsteps\RC_Footsteps_Stone\Footstep_03		48096

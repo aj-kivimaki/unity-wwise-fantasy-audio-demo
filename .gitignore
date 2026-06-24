@@ -29,15 +29,12 @@ logRunSetup.txt
 # macOS
 .DS_Store
 
-# Wwise SDK binaries
+# Wwise SDK binaries, docs, debug symbols, profiling sessions
 Assets/Wwise/API/Runtime/Plugins/
-
-# Wwise docs
 Assets/Wwise/Documentation/
-
-# Wwise debug symbols
 *.dSYM
 *.pdb
+*.prof
 
 FantasyAudioDemo_Wwise/.cache/
 FantasyAudioDemo_Wwise/GeneratedSoundBanks/Windows/

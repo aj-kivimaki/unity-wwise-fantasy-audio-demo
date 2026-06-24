@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F8B27052-A4DF-418E-AB53-BE7E2C9374E4}",
     "Language": "SFX",
-    "Hash": "{54FA7745-DCA4-8F1F-F27F-34423C782B27}",
+    "Hash": "{8C348EEE-F3BF-7A1C-FE44-D7CAEE856582}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -46,6 +46,14 @@
       "Location": "Memory",
       "ShortName": "Desk Hit 6.wav",
       "CachePath": "45/{45F0F972-AADF-4851-693E-706F7050D7E8}.wem"
+     },
+     {
+      "Id": "582322929",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "388340__phlair__dungeon-ambiance.wav",
+      "CachePath": "E7/{E76657B1-DFE2-0144-E103-2F9BB185E654}.wem"
      },
      {
       "Id": "591687283",
@@ -90,9 +98,21 @@
     ],
     "Events": [
      {
+      "Id": "2622581939",
+      "Name": "Play_Dungeon_Ambience",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Play_Dungeon_Ambience",
+      "GUID": "{E43FD435-7A48-404F-B34A-AD37B7926931}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "582322929"
+       }
+      ]
+     },
+     {
       "Id": "2337602353",
       "Name": "Play_RC_Footsteps_Stone",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_RC_Footsteps_Stone",
+      "ObjectPath": "\\Events\\Default Work Unit\\Footsteps\\Play_RC_Footsteps_Stone",
       "GUID": "{8158051C-48B0-485B-97F4-6DD951D60965}",
       "DurationType": "OneShot",
       "DurationMin": "0.25",
@@ -137,10 +157,20 @@
         "Id": "1056759824"
        }
       ]
+     },
+     {
+      "Id": "156076713",
+      "Name": "Stop_Dungeon_Ambience",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Stop_Dungeon_Ambience",
+      "GUID": "{E80A13C3-9639-4996-865A-3AD89F1B4DEE}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      }
     ]
    }
   ],
-  "FileHash": "{9BC88AC5-968C-AE16-0099-84CBCDA77406}"
+  "FileHash": "{2B575509-AE59-FF52-2D80-2161270797C8}"
  }
 }
