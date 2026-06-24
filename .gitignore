@@ -37,8 +37,7 @@ Assets/Wwise/Documentation/
 *.prof
 
 FantasyAudioDemo_Wwise/.cache/
-FantasyAudioDemo_Wwise/GeneratedSoundBanks/Windows/
-FantasyAudioDemo_Wwise/GeneratedSoundBanks/Mac/
+FantasyAudioDemo_Wwise/GeneratedSoundBanks
 
 *.validationcache
 
