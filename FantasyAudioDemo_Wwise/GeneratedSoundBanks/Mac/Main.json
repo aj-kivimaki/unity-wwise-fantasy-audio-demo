@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{F8B27052-A4DF-418E-AB53-BE7E2C9374E4}",
     "Language": "SFX",
-    "Hash": "{8C348EEE-F3BF-7A1C-FE44-D7CAEE856582}",
+    "Hash": "{A0B932EF-DC7D-B1EE-666E-870B43F81CAF}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -48,14 +48,6 @@
       "CachePath": "45/{45F0F972-AADF-4851-693E-706F7050D7E8}.wem"
      },
      {
-      "Id": "582322929",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "388340__phlair__dungeon-ambiance.wav",
-      "CachePath": "E7/{E76657B1-DFE2-0144-E103-2F9BB185E654}.wem"
-     },
-     {
       "Id": "591687283",
       "Language": "SFX",
       "Streaming": "false",
@@ -80,6 +72,14 @@
       "CachePath": "96/{967D9A61-1FAA-17F4-9C0B-5E9E45BD06D9}.wem"
      },
      {
+      "Id": "1002707891",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "388340__phlair__dungeon-ambiance.wav",
+      "CachePath": "E7/{E76657B1-DFE2-0144-E103-2F9BB185E654}.wem"
+     },
+     {
       "Id": "1019073042",
       "Language": "SFX",
       "Streaming": "false",
@@ -101,11 +101,11 @@
       "Id": "2622581939",
       "Name": "Play_Dungeon_Ambience",
       "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Play_Dungeon_Ambience",
-      "GUID": "{E43FD435-7A48-404F-B34A-AD37B7926931}",
+      "GUID": "{36F5B698-9480-42D4-9E85-C0FCBB26931E}",
       "DurationType": "Infinite",
       "MediaRefs": [
        {
-        "Id": "582322929"
+        "Id": "1002707891"
        }
       ]
      },
@@ -157,20 +157,10 @@
         "Id": "1056759824"
        }
       ]
-     },
-     {
-      "Id": "156076713",
-      "Name": "Stop_Dungeon_Ambience",
-      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Stop_Dungeon_Ambience",
-      "GUID": "{E80A13C3-9639-4996-865A-3AD89F1B4DEE}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
      }
     ]
    }
   ],
-  "FileHash": "{2B575509-AE59-FF52-2D80-2161270797C8}"
+  "FileHash": "{334B9FF3-361D-4DF3-3AFE-25787D38D1CC}"
  }
 }

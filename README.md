@@ -1,6 +1,6 @@
 # Unity Wwise Fantasy Audio Demo
 
-An interactive game audio portfolio project demonstrating adaptive music, sound design, and technical audio implementation using Unity and Wwise.
+An interactive game audio portfolio project exploring adaptive music, sound design, and technical audio implementation using Unity and Wwise.
 
 ## Project Goals
 
@@ -60,10 +60,15 @@ This project serves as the foundation for the following portfolio pieces:
 - Randomized footstep system implemented
 - Animation-driven audio triggering implemented
 - Placeholder audio workflow established
+- Global dungeon ambience system implemented
+- Localized shrine ambience system implemented
+- Custom Wwise attenuation ShareSet implemented
+- Multiple simultaneous ambience layers validated
+- Wwise Profiler workflow established
 
 ## Next Milestone
 
-- Implement jump audio system
-- Implement landing audio system
-- Establish reusable gameplay audio event workflow
-- Expand footstep system with surface-based playback
+- Implement combat arena ambience system
+- Create distinct environmental audio identity for combat spaces
+- Expand environmental ambience coverage across the level
+- Prepare foundation for ambience zone transitions

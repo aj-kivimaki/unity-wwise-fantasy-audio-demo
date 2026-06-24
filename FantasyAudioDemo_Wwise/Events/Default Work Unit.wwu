@@ -14,17 +14,75 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_RC_Footsteps_Stone" ID="{8158051C-48B0-485B-97F4-6DD951D60965}">
+				<Folder Name="Ambience" ID="{8F5D988F-0877-4F17-98D5-B750E42AFFBE}" ShortID="75660812">
 					<ChildrenList>
-						<Action Name="" ID="{137D6037-F32D-4F9E-B535-DB2EFD966C5F}" ShortID="200617593">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="RC_Footsteps_Stone" ID="{76878166-0183-4C21-A9A9-0BED5A4C4C29}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Stop_Dungeon_Ambience" ID="{348D51B4-BBF7-4578-A52E-77EFEF6CDC8A}">
+							<ChildrenList>
+								<Action Name="" ID="{1585BF04-1796-4C2A-ACF4-90838A2B5C2E}" ShortID="1046890716">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Dungeon_Ambience" ID="{5BB26A92-7DC7-4F3E-A529-4D1EFAB4BA0B}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Dungeon_Ambience" ID="{36F5B698-9480-42D4-9E85-C0FCBB26931E}">
+							<ChildrenList>
+								<Action Name="" ID="{B2C37E14-4F48-454B-9E27-1A2DADBB78C2}" ShortID="755625661">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Dungeon_Ambience" ID="{5BB26A92-7DC7-4F3E-A529-4D1EFAB4BA0B}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Shrine_Ambience" ID="{AAAC686A-1CD2-4D5A-9FE5-576EF1B2A3CB}">
+							<ChildrenList>
+								<Action Name="" ID="{39D3790E-C5EC-499F-AD6F-6E562BBFAEF6}" ShortID="457752022">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shrine_Ambience" ID="{2E37053D-4151-446F-B45A-CDB1A3B8A3CB}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Shrine_Ambience" ID="{91CB7DFA-6FCD-4D28-8F04-443A0EEBEFB2}">
+							<ChildrenList>
+								<Action Name="" ID="{E350CC1D-16E1-4CB4-BDC0-F0A8CADA870E}" ShortID="554040450">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Shrine_Ambience" ID="{2E37053D-4151-446F-B45A-CDB1A3B8A3CB}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
+				</Folder>
+				<Folder Name="Footsteps" ID="{E9F2CB1C-D89E-4B54-AB34-5C42E220F1F9}" ShortID="129293240">
+					<ChildrenList>
+						<Event Name="Play_RC_Footsteps_Stone" ID="{8158051C-48B0-485B-97F4-6DD951D60965}">
+							<ChildrenList>
+								<Action Name="" ID="{137D6037-F32D-4F9E-B535-DB2EFD966C5F}" ShortID="200617593">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="RC_Footsteps_Stone" ID="{76878166-0183-4C21-A9A9-0BED5A4C4C29}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

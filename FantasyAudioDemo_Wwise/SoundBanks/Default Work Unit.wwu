@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{F8B27052-A4DF-418E-AB53-BE7E2C9374E4}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_Dungeon_Ambience" ID="{36F5B698-9480-42D4-9E85-C0FCBB26931E}" WorkUnitID="{30FDA5BF-CA14-436C-B6E8-48EEB1DD0FD3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Weird_Stomp" ID="{05833D54-7367-45E7-A4E6-17AE6BF94C89}" WorkUnitID="{30FDA5BF-CA14-436C-B6E8-48EEB1DD0FD3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RC_Footsteps_Stone" ID="{8158051C-48B0-485B-97F4-6DD951D60965}" WorkUnitID="{30FDA5BF-CA14-436C-B6E8-48EEB1DD0FD3}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
