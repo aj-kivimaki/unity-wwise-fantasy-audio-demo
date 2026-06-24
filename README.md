@@ -23,7 +23,7 @@ The playable experience consists of a short fantasy dungeon adventure through:
 - Combat Arena
 - Reward Shrine
 
-The prototype is intentionally designed as an audio-focused experience, providing opportunities for adaptive music, ambience, combat audio, environmental sound design, and Wwise implementation while maintaining a manageable development scope.
+The prototype is intentionally designed as an audio-focused experience, providing opportunities for adaptive music, ambience, gameplay audio, environmental sound design, and Wwise implementation while maintaining a manageable development scope.
 
 ## Technologies
 
@@ -69,7 +69,9 @@ This project serves as the foundation for the following portfolio pieces:
 
 - First Wwise event implemented and tested
 - Randomized footstep system implemented
-- Animation-driven audio triggering implemented
+- Animation-driven footstep triggering implemented
+- Jump audio system implemented
+- Grounded-to-airborne movement state detection implemented
 - Placeholder audio workflow established
 
 ### Environmental Audio Systems
@@ -83,21 +85,36 @@ This project serves as the foundation for the following portfolio pieces:
 
 ## Current Audio Features
 
+### Movement Audio
+
 - Animation-driven footsteps
 - Randomized footstep playback
+- Jump audio playback
+- Grounded-state movement detection
+
+### Environmental Audio
+
 - Global environmental ambience
 - Localized environmental ambience
 - 3D positional audio
 - Distance-based attenuation
 - Multiple concurrent ambience systems
-- Wwise event-driven audio playback
+
+### Wwise Implementation
+
+- Event-driven audio playback
+- Random Containers
+- Attenuation ShareSets
+- SoundBank management
+- Wwise Profiler validation workflow
 
 ## Next Milestone
 
-- Design and implement ambience zone transitions
-- Create seamless movement between environmental audio spaces
-- Explore Wwise States and RTPC-driven behavior
-- Prepare foundation for adaptive exploration music
+- Implement landing audio system
+- Complete player movement audio package
+- Establish reusable grounded-state audio workflow
+- Begin adaptive music system implementation
+- Introduce Wwise States and music transitions
 
 ## Repository Structure
 
@@ -111,7 +128,6 @@ FantasyAudioDemo_Wwise/
 ├── Events/
 ├── Containers/
 ├── Attenuations/
-├── GeneratedSoundBanks/
 ├── Originals/
 
 docs/
@@ -121,4 +137,4 @@ portfolio-assets/
 
 ## Status
 
-Current focus is transitioning from foundational environmental audio implementation toward adaptive audio systems and interactive music workflows.
+The project has completed its core environmental audio foundation and is now expanding into complete gameplay audio systems. Current development is focused on finishing the player movement audio package before transitioning into adaptive music, Wwise States, and interactive music workflows.

@@ -370,6 +370,42 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Player" ID="{9DBD96B4-EDAF-460E-A119-0C7AEDA6E1A1}" ShortID="125408041">
+					<ChildrenList>
+						<Folder Name="Jump" ID="{7430792E-72A9-42CA-90C7-83228A64B2C4}" ShortID="807104908">
+							<ChildrenList>
+								<Sound Name="Jump" ID="{02A26272-75E1-49DC-B113-BAEEC6FB9A32}" ShortID="23919031">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE998976-A8A5-4601-AA2E-3B317C788248}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83E8CD34-2E71-4A2B-AC8B-C975DA201038}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="pick2" ID="{42AE345C-0ABE-4C61-96FB-2DD86189FAE6}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.01173"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.03187"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.57998"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>pick2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="46021865"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="pick2" ID="{42AE345C-0ABE-4C61-96FB-2DD86189FAE6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

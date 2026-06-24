@@ -108,6 +108,21 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Player" ID="{A46791E2-DA4F-42B0-B5CE-C36AA9250D3C}" ShortID="230706371">
+					<ChildrenList>
+						<Event Name="Play_Jump" ID="{91C44042-E2FF-42A2-BDAF-455BDB3612EE}">
+							<ChildrenList>
+								<Action Name="" ID="{BD636C49-72CE-4BF9-B3D1-3128752B0AC8}" ShortID="400127930">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{02A26272-75E1-49DC-B113-BAEEC6FB9A32}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

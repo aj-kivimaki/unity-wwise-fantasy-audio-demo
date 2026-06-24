@@ -109,6 +109,7 @@ namespace StarterAssets
         private const float _threshold = 0.01f;
 
         private bool _hasAnimator;
+        private bool _wasGrounded;
 
         private bool IsCurrentDeviceMouse
         {
@@ -178,9 +179,15 @@ namespace StarterAssets
         private void GroundedCheck()
         {
             // set sphere position, with offset
-            Vector3 spherePosition = new Vector3(transform.position.x, transform.position.y - GroundedOffset,
+            Vector3 spherePosition = new Vector3(
+                transform.position.x,
+                transform.position.y - GroundedOffset,
                 transform.position.z);
-            Grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers,
+
+            Grounded = Physics.CheckSphere(
+                spherePosition,
+                GroundedRadius,
+                GroundLayers,
                 QueryTriggerInteraction.Ignore);
 
             // update animator if using character
@@ -188,6 +195,14 @@ namespace StarterAssets
             {
                 _animator.SetBool(_animIDGrounded, Grounded);
             }
+
+            // Jump detection
+            if (_wasGrounded && !Grounded)
+            {
+                AkSoundEngine.PostEvent("Play_Jump", gameObject);
+            }
+
+            _wasGrounded = Grounded;
         }
 
         private void CameraRotation()
