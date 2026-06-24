@@ -38,6 +38,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="Footstep_01" ID="{4D304B9F-BF15-4BDE-A7CF-8483D5ECA0CC}" ShortID="696500307">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE998976-A8A5-4601-AA2E-3B317C788248}"/>
@@ -60,6 +67,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Footstep_02" ID="{4AA292BE-485F-477A-87CE-101AA396218E}" ShortID="762615511">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE998976-A8A5-4601-AA2E-3B317C788248}"/>
@@ -82,6 +96,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Footstep_03" ID="{C8DE6B99-B64D-4227-8D06-E8B68414FEFB}" ShortID="271213990">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE998976-A8A5-4601-AA2E-3B317C788248}"/>
@@ -104,6 +125,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Footstep_04" ID="{E51C5DA2-047C-4A20-9CEE-25F2EA0912C5}" ShortID="584877006">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE998976-A8A5-4601-AA2E-3B317C788248}"/>
@@ -126,6 +154,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Footstep_05" ID="{775AD894-CDCB-420C-B46E-8E6E04A5C6C6}" ShortID="51768296">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE998976-A8A5-4601-AA2E-3B317C788248}"/>
@@ -148,6 +183,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Footstep_06" ID="{66F2FF94-151D-47BD-AA13-C9B4E766879F}" ShortID="233648019">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE998976-A8A5-4601-AA2E-3B317C788248}"/>
@@ -170,6 +212,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Footstep_07" ID="{3CDC905F-3DC2-4DAC-9B09-7BB3AB9E8C2C}" ShortID="119715551">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE998976-A8A5-4601-AA2E-3B317C788248}"/>
@@ -192,6 +241,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="Footstep_08" ID="{822C054D-20DD-4A17-9283-40DF5B1197B2}" ShortID="47613111">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE998976-A8A5-4601-AA2E-3B317C788248}"/>
@@ -276,6 +332,38 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Shrine_Ambience" ID="{694CA115-D2EA-4C34-872F-F1222046DA15}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Arena" ID="{1B2CBF5E-9AE8-4BEB-A4D4-E7CF53F6671F}" ShortID="1031352822">
+							<ChildrenList>
+								<Sound Name="Arena_Ambience" ID="{6021F48C-18E4-4350-B92E-41FD634E39A5}" ShortID="73649266">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Arena_Attenuation" ID="{800907EE-F1CA-484C-A9D1-0DD55E5B5ECA}" WorkUnitID="{76B2D7D9-E1A6-49C4-8580-23E7A7405E4E}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE998976-A8A5-4601-AA2E-3B317C788248}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83E8CD34-2E71-4A2B-AC8B-C975DA201038}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Arena_Ambience" ID="{0D7918DF-5CA5-4E1F-B2CF-A1BE904DEDCE}">
+											<Language>SFX</Language>
+											<AudioFile>Arena_Ambience.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="470873906"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Arena_Ambience" ID="{0D7918DF-5CA5-4E1F-B2CF-A1BE904DEDCE}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

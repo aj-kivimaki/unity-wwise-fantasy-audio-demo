@@ -15,17 +15,17 @@ A new ambient sound source was created in Wwise and configured as a looping 3D s
 ```
 Containers
 └── Ambience
-├── Dungeon
-│ └── Dungeon_Ambience
-└── Shrine
-└── Shrine_Ambience
+   ├── Dungeon
+   │  └── Dungeon_Ambience
+   └── Shrine
+      └── Shrine_Ambience
 
 Events
 └── Ambience
-├── Play_Dungeon_Ambience
-├── Stop_Dungeon_Ambience
-├── Play_Shrine_Ambience
-└── Stop_Shrine_Ambience
+   ├── Play_Dungeon_Ambience
+   ├── Stop_Dungeon_Ambience
+   ├── Play_Shrine_Ambience
+   └── Stop_Shrine_Ambience
 ```
 
 ---

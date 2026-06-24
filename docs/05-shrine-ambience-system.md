@@ -25,20 +25,22 @@ Unlike the dungeon ambience, which is designed to provide a consistent environme
 ```
 Containers
 └── Ambience
-├── Dungeon
-│ └── Dungeon_Ambience
-└── Shrine
-  └── Shrine_Ambience
+   ├── Dungeon
+   │  └── Dungeon_Ambience
+   └── Shrine
+      └── Shrine_Ambience
 ```
 
 ### Events
 
+```
 Events
 └── Ambience
-├── Play_Dungeon_Ambience
-├── Stop_Dungeon_Ambience
-├── Play_Shrine_Ambience
-└── Stop_Shrine_Ambience
+   ├── Play_Dungeon_Ambience
+   ├── Stop_Dungeon_Ambience
+   ├── Play_Shrine_Ambience
+   └── Stop_Shrine_Ambience
+```
 
 ### Attenuation
 

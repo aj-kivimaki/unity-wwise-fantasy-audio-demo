@@ -1,0 +1,86 @@
+# Devlog 006 – Combat Arena Ambience System
+
+## Goal
+
+Create a dedicated ambience system for the combat arena area to establish a distinct environmental audio identity and continue expanding the level's audio coverage.
+
+---
+
+## Implementation
+
+A new localized ambience source was implemented for the combat arena using Wwise and Unity.
+
+### Wwise Structure
+
+```
+Containers
+└── Ambience
+   ├── Dungeon
+   │  └── Dungeon_Ambience
+   ├── Shrine
+   │  └── Shrine_Ambience
+   └── Arena
+      └── Arena_Ambience
+
+Events
+└── Ambience
+   ├── Play_Dungeon_Ambience
+   ├── Stop_Dungeon_Ambience
+   ├── Play_Shrine_Ambience
+   ├── Stop_Shrine_Ambience
+   ├── Play_Arena_Ambience
+   └── Stop_Arena_Ambience
+```
+
+---
+
+## Attenuation
+
+A dedicated Arena_Attenuation ShareSet was created and assigned to the arena ambience object.
+
+The attenuation curve creates a localized listening area around the combat arena and increases perceived intensity as the player approaches the space.
+
+---
+
+## Unity Integration
+
+A dedicated ArenaAmbience GameObject was placed in the combat arena.
+
+Components:
+
+- Transform
+- AkGameObj
+- AkAmbient
+
+Configuration:
+
+- Event: Play_Arena_Ambience
+- Trigger: Start
+
+---
+
+## Validation
+
+Testing confirmed:
+
+- Arena ambience plays successfully.
+- Distance-based attenuation functions correctly.
+- Dungeon ambience remains active throughout the level.
+- Shrine ambience remains functional.
+- Multiple environmental ambience layers coexist correctly.
+- Wwise Profiler reports expected event activity.
+- SoundBanks generate successfully.
+
+---
+
+## Lessons Learned
+
+This task expanded the environmental audio implementation from two audio identities to three.
+
+The level now contains:
+
+- Global Dungeon Ambience
+- Localized Shrine Ambience
+- Localized Arena Ambience
+
+This creates a stronger sense of place and establishes a foundation for future ambience transitions and adaptive music systems.

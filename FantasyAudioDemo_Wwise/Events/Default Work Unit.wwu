@@ -66,6 +66,31 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Stop_Arena_Ambience" ID="{A175DD69-6F24-4873-988B-72F4D8BBA66C}">
+							<ChildrenList>
+								<Action Name="" ID="{AB8F45DE-F668-40BF-BDC3-BC0170DF0A48}" ShortID="958436277">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Arena_Ambience" ID="{6021F48C-18E4-4350-B92E-41FD634E39A5}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Arena_Ambience" ID="{DB88AEC1-6B53-4DDD-91BB-5453D2AA4431}">
+							<ChildrenList>
+								<Action Name="" ID="{F27F4767-2B8F-4C60-A10A-15FDDBB1E53C}" ShortID="734152612">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Arena_Ambience" ID="{6021F48C-18E4-4350-B92E-41FD634E39A5}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Footsteps" ID="{E9F2CB1C-D89E-4B54-AB34-5C42E220F1F9}" ShortID="129293240">

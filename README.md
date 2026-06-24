@@ -11,7 +11,7 @@ This project focuses on showcasing:
 - Sound design for gameplay and environments
 - Audio implementation in Unity
 - Wwise integration and middleware workflows
-- Technical audio design concepts such as States, RTPCs, Switches, and Reverb Zones
+- Technical audio design concepts such as States, RTPCs, Switches, Attenuation, and Reverb Zones
 
 ## Demo Structure
 
@@ -44,31 +44,81 @@ This project serves as the foundation for the following portfolio pieces:
 
 ## Current Progress
 
+### Project Foundation
+
 - Unity project created
 - Git workflow established
 - Project documentation and development logs created
 - Third-person gameplay prototype established
+
+### Environment Development
+
 - Fantasy dungeon environment blockout completed
 - Gameplay flow and level structure completed
 - Environment dressing completed
+
+### Wwise Integration
+
 - Wwise project created
 - Wwise integrated into Unity
 - SoundBank generation pipeline verified
 - Unity ↔ Wwise communication verified
+- Wwise Profiler workflow established
+
+### Gameplay Audio Systems
+
 - First Wwise event implemented and tested
-- First gameplay audio system implemented
 - Randomized footstep system implemented
 - Animation-driven audio triggering implemented
 - Placeholder audio workflow established
+
+### Environmental Audio Systems
+
 - Global dungeon ambience system implemented
 - Localized shrine ambience system implemented
-- Custom Wwise attenuation ShareSet implemented
+- Localized combat arena ambience system implemented
+- Custom Wwise attenuation ShareSets implemented
 - Multiple simultaneous ambience layers validated
-- Wwise Profiler workflow established
+- Environmental audio layering workflow established
+
+## Current Audio Features
+
+- Animation-driven footsteps
+- Randomized footstep playback
+- Global environmental ambience
+- Localized environmental ambience
+- 3D positional audio
+- Distance-based attenuation
+- Multiple concurrent ambience systems
+- Wwise event-driven audio playback
 
 ## Next Milestone
 
-- Implement combat arena ambience system
-- Create distinct environmental audio identity for combat spaces
-- Expand environmental ambience coverage across the level
-- Prepare foundation for ambience zone transitions
+- Design and implement ambience zone transitions
+- Create seamless movement between environmental audio spaces
+- Explore Wwise States and RTPC-driven behavior
+- Prepare foundation for adaptive exploration music
+
+## Repository Structure
+
+```text
+Assets/
+├── Scenes/
+├── Scripts/
+├── StreamingAssets/
+
+FantasyAudioDemo_Wwise/
+├── Events/
+├── Containers/
+├── Attenuations/
+├── GeneratedSoundBanks/
+├── Originals/
+
+docs/
+devlogs/
+portfolio-assets/
+```
+
+## Status
+
+Current focus is transitioning from foundational environmental audio implementation toward adaptive audio systems and interactive music workflows.

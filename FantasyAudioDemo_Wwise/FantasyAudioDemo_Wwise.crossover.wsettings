@@ -10,7 +10,9 @@
 				<Property Name="Event Action List\{36F5B698-9480-42D4-9E85-C0FCBB26931E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8158051C-48B0-485B-97F4-6DD951D60965}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{91CB7DFA-6FCD-4D28-8F04-443A0EEBEFB2}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{A175DD69-6F24-4873-988B-72F4D8BBA66C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{AAAC686A-1CD2-4D5A-9FE5-576EF1B2A3CB}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{DB88AEC1-6B53-4DDD-91BB-5453D2AA4431}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -52,7 +54,7 @@
 				<Property Name="ProjectExplorer\SelectionChannel_1\Audio_FocusedObject" Type="string" Value="{0D640D9A-138F-413F-A05B-8586950F3F00}"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\CurrentSearch" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\CurrentTab" Type="int32" Value="1"/>
-				<Property Name="ProjectExplorer\SelectionChannel_1\Events_FocusedObject" Type="string" Value="{36F5B698-9480-42D4-9E85-C0FCBB26931E}"/>
+				<Property Name="ProjectExplorer\SelectionChannel_1\Events_FocusedObject" Type="string" Value="{DB88AEC1-6B53-4DDD-91BB-5453D2AA4431}"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\Game Syncs_FocusedObject" Type="string" Value="{CB6175F1-6080-4A23-92EF-0807E304D0C1}"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\Queries_FocusedObject" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
 				<Property Name="ProjectExplorer\SelectionChannel_1\Sessions_FocusedObject" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
