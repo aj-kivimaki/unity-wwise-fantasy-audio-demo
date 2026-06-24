@@ -404,6 +404,32 @@
 								</Sound>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Landing" ID="{20342091-DB71-4FC4-A953-F76299831A73}" ShortID="922972210">
+							<ChildrenList>
+								<Sound Name="Landing" ID="{F04F3094-8E99-43B7-84B6-11EE0C6C2B3F}" ShortID="355555417">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE998976-A8A5-4601-AA2E-3B317C788248}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83E8CD34-2E71-4A2B-AC8B-C975DA201038}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Kick - Crush Me" ID="{DAA50895-35A6-47CA-BEAB-54B94DFEB4D7}">
+											<Language>SFX</Language>
+											<AudioFile>Kick - Crush Me.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="360857067"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Kick - Crush Me" ID="{DAA50895-35A6-47CA-BEAB-54B94DFEB4D7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -6,9 +6,11 @@
 				<Property Name="AudioFileImporter\x64_FilesToImport" Type="string" Value="AAAAAAAAAAA="/>
 				<Property Name="AudioFilesImporter\DestinationFolder" Type="string" Value="Y:\unity-wwise-portfolio\FantasyAudioPortfolio\FantasyAudioDemo_Wwise\Originals\SFX\"/>
 				<Property Name="Event Action List\{05833D54-7367-45E7-A4E6-17AE6BF94C89}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{3452A97F-50F4-4506-9803-8A5EE50BCC1B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{348D51B4-BBF7-4578-A52E-77EFEF6CDC8A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{36F5B698-9480-42D4-9E85-C0FCBB26931E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8158051C-48B0-485B-97F4-6DD951D60965}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{91C44042-E2FF-42A2-BDAF-455BDB3612EE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{91CB7DFA-6FCD-4D28-8F04-443A0EEBEFB2}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A175DD69-6F24-4873-988B-72F4D8BBA66C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{AAAC686A-1CD2-4D5A-9FE5-576EF1B2A3CB}\x64_Expand States" Type="string" Value=""/>

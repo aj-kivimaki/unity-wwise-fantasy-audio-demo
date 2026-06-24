@@ -110,6 +110,7 @@ namespace StarterAssets
 
         private bool _hasAnimator;
         private bool _wasGrounded;
+        private bool _hasInitializedGroundState;
 
         private bool IsCurrentDeviceMouse
         {
@@ -190,6 +191,13 @@ namespace StarterAssets
                 GroundLayers,
                 QueryTriggerInteraction.Ignore);
 
+            if (!_hasInitializedGroundState)
+            {
+                _wasGrounded = Grounded;
+                _hasInitializedGroundState = true;
+                return;
+            }
+            
             // update animator if using character
             if (_hasAnimator)
             {
@@ -200,6 +208,12 @@ namespace StarterAssets
             if (_wasGrounded && !Grounded)
             {
                 AkSoundEngine.PostEvent("Play_Jump", gameObject);
+            }
+
+             // Landing detection
+            if (!_wasGrounded && Grounded)
+            {
+                AkSoundEngine.PostEvent("Play_Landing", gameObject);
             }
 
             _wasGrounded = Grounded;

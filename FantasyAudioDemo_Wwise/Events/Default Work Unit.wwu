@@ -3,17 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{30FDA5BF-CA14-436C-B6E8-48EEB1DD0FD3}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Weird_Stomp" ID="{05833D54-7367-45E7-A4E6-17AE6BF94C89}">
-					<ChildrenList>
-						<Action Name="" ID="{D375A041-4CE7-4C2B-BE06-919D5B6DB672}" ShortID="411982261">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Weird Stomp" ID="{0D640D9A-138F-413F-A05B-8586950F3F00}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Ambience" ID="{8F5D988F-0877-4F17-98D5-B750E42AFFBE}" ShortID="75660812">
 					<ChildrenList>
 						<Event Name="Stop_Dungeon_Ambience" ID="{348D51B4-BBF7-4578-A52E-77EFEF6CDC8A}">
@@ -116,6 +105,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Jump" ID="{02A26272-75E1-49DC-B113-BAEEC6FB9A32}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Landing" ID="{3452A97F-50F4-4506-9803-8A5EE50BCC1B}">
+							<ChildrenList>
+								<Action Name="" ID="{BBBCC275-92E4-4A4C-B317-2A3073EC9BD7}" ShortID="456220656">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Landing" ID="{F04F3094-8E99-43B7-84B6-11EE0C6C2B3F}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
