@@ -82,21 +82,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Footsteps" ID="{E9F2CB1C-D89E-4B54-AB34-5C42E220F1F9}" ShortID="129293240">
-					<ChildrenList>
-						<Event Name="Play_RC_Footsteps_Stone" ID="{8158051C-48B0-485B-97F4-6DD951D60965}">
-							<ChildrenList>
-								<Action Name="" ID="{137D6037-F32D-4F9E-B535-DB2EFD966C5F}" ShortID="200617593">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="RC_Footsteps_Stone" ID="{76878166-0183-4C21-A9A9-0BED5A4C4C29}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
 				<Folder Name="Player" ID="{A46791E2-DA4F-42B0-B5CE-C36AA9250D3C}" ShortID="230706371">
 					<ChildrenList>
 						<Event Name="Play_Jump" ID="{91C44042-E2FF-42A2-BDAF-455BDB3612EE}">
@@ -121,6 +106,27 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Footsteps" ID="{E9F2CB1C-D89E-4B54-AB34-5C42E220F1F9}" ShortID="129293240">
+							<ChildrenList>
+								<Event Name="Play_RC_Footsteps_Stone" ID="{8158051C-48B0-485B-97F4-6DD951D60965}">
+									<ChildrenList>
+										<Action Name="" ID="{137D6037-F32D-4F9E-B535-DB2EFD966C5F}" ShortID="200617593">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="RC_Footsteps_Stone" ID="{76878166-0183-4C21-A9A9-0BED5A4C4C29}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{BA5004A6-EB5F-4B36-86C0-0574B0740735}" ShortID="827079429">
+					<ChildrenList>
+						<Event Name="Play_Music" ID="{E6A5447C-DE97-4CF4-ACFD-04F2BFEB2B7D}"/>
+						<Event Name="Stop_Music" ID="{D8FDA0D1-D11F-4E1D-ABA6-89EB974D751C}"/>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
