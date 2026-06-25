@@ -1,16 +1,16 @@
-# Audio Bus Architecture
+# Devlog 009 – Audio Bus Architecture
 
-## Overview
+## Objective
 
-The project uses a dedicated audio bus hierarchy to separate content organization from audio mixing.
-
-This structure simplifies volume balancing, DSP processing, and future adaptive audio implementation.
+Prepare the project for adaptive music, environmental effects, and future mixing workflows by introducing a dedicated audio bus structure.
 
 ---
 
-## Audio Bus Hierarchy
+## Implementation
 
-Master Audio Bus
+A dedicated mixing hierarchy was created under the Master Audio Bus.
+
+### Audio Bus Structure
 
 - Music
 - Ambience
@@ -18,13 +18,9 @@ Master Audio Bus
 - UI
 - Voice
 
-Each category represents a logical mix bus rather than a gameplay system.
+The content hierarchy was also reorganized using Property Containers to separate audio organization from mix routing.
 
----
-
-## Content Hierarchy
-
-The Actor-Mixer hierarchy is organized using Property Containers.
+### Content Structure
 
 Property Containers
 
@@ -41,58 +37,39 @@ Virtual Folders
 - Jump
 - Landing
 
-Property Containers are responsible for routing, while Virtual Folders provide organization only.
-
 ---
 
 ## Routing
 
-Output Bus assignments are configured on the top-level Property Containers.
+The top-level Property Containers were assigned to their respective output buses.
 
-| Property Container | Output Bus |
-| ------------------ | ---------- |
-| Ambience           | Ambience   |
-| Player_SFX         | SFX        |
-| Music              | Music      |
+- Ambience → Ambience Bus
+- Player_SFX → SFX Bus
+- Music → Music Bus
 
-Child objects inherit routing automatically.
+Individual sounds inherit their routing from their parent Property Container.
 
 ---
 
 ## Spatial Audio
 
-Localized ambience sounds define their own spatial behavior.
+Localized ambience objects retain their own attenuation ShareSets.
 
-| Sound            | Attenuation        |
-| ---------------- | ------------------ |
-| Dungeon Ambience | None (Global)      |
-| Shrine Ambience  | Shrine Attenuation |
-| Arena Ambience   | Arena Attenuation  |
+- Shrine → Shrine Attenuation
+- Arena → Arena Attenuation
 
-This allows the project to combine global ambience with localized environmental audio.
+The global dungeon ambience remains non-spatial and therefore does not use an attenuation ShareSet.
 
 ---
 
-## Benefits
+## Outcome
 
-The architecture provides:
+The project now has a scalable audio routing architecture suitable for:
 
-- Centralized mix control
-- Simplified content organization
-- Consistent routing through inheritance
-- Support for future DSP processing
-- Foundation for adaptive music
-- Scalable project organization
+- Adaptive music
+- Bus-level volume control
+- Environmental DSP
+- Reverb sends
+- Future mixing workflows
 
----
-
-## Future Applications
-
-The bus hierarchy enables future features including:
-
-- Music and ambience balancing
-- Indoor/outdoor EQ processing
-- Environmental reverb sends
-- Audio ducking
-- Dynamic mixing
-- Adaptive music implementation
+This establishes the project's long-term mixing foundation before implementing adaptive music systems.

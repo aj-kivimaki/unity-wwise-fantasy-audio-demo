@@ -7,7 +7,7 @@ Phase 2 - Wwise
 
 Phase 3 - Audio Systems
 - [X] Footsteps
-- [ ] Ambient zones
+- [X] Ambient zones
 - [ ] Audio triggers
 
 Phase 4 - Interactive Music
