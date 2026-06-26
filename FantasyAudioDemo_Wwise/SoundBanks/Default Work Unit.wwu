@@ -9,8 +9,10 @@
 						<ObjectRef Name="Play_Dungeon_Ambience" ID="{36F5B698-9480-42D4-9E85-C0FCBB26931E}" WorkUnitID="{30FDA5BF-CA14-436C-B6E8-48EEB1DD0FD3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Landing" ID="{3452A97F-50F4-4506-9803-8A5EE50BCC1B}" WorkUnitID="{30FDA5BF-CA14-436C-B6E8-48EEB1DD0FD3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_RC_Footsteps_Stone" ID="{8158051C-48B0-485B-97F4-6DD951D60965}" WorkUnitID="{30FDA5BF-CA14-436C-B6E8-48EEB1DD0FD3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Music" ID="{E6A5447C-DE97-4CF4-ACFD-04F2BFEB2B7D}" WorkUnitID="{30FDA5BF-CA14-436C-B6E8-48EEB1DD0FD3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Shrine_Ambience" ID="{91CB7DFA-6FCD-4D28-8F04-443A0EEBEFB2}" WorkUnitID="{30FDA5BF-CA14-436C-B6E8-48EEB1DD0FD3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Arena_Ambience" ID="{DB88AEC1-6B53-4DDD-91BB-5453D2AA4431}" WorkUnitID="{30FDA5BF-CA14-436C-B6E8-48EEB1DD0FD3}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Music" ID="{D8FDA0D1-D11F-4E1D-ABA6-89EB974D751C}" WorkUnitID="{30FDA5BF-CA14-436C-B6E8-48EEB1DD0FD3}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

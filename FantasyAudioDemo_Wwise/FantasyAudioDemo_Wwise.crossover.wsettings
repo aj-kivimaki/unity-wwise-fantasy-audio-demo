@@ -5,6 +5,7 @@
 			<PropertyList>
 				<Property Name="AudioFileImporter\x64_FilesToImport" Type="string" Value="AAAAAAAAAAA="/>
 				<Property Name="AudioFilesImporter\DestinationFolder" Type="string" Value="Y:\unity-wwise-portfolio\FantasyAudioPortfolio\FantasyAudioDemo_Wwise\Originals\SFX\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="Y:\Desktop\BCH\Other\GROUP WORK\Sprint 1\"/>
 				<Property Name="Event Action List\{05833D54-7367-45E7-A4E6-17AE6BF94C89}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3452A97F-50F4-4506-9803-8A5EE50BCC1B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{348D51B4-BBF7-4578-A52E-77EFEF6CDC8A}\x64_Expand States" Type="string" Value=""/>
@@ -13,8 +14,13 @@
 				<Property Name="Event Action List\{91C44042-E2FF-42A2-BDAF-455BDB3612EE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{91CB7DFA-6FCD-4D28-8F04-443A0EEBEFB2}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A175DD69-6F24-4873-988B-72F4D8BBA66C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{A7A60149-9A84-4FBC-A255-F5F4BC96F9AB}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{AAAC686A-1CD2-4D5A-9FE5-576EF1B2A3CB}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{BCB38BD0-3496-4519-ADC2-F6DF0EDF029B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D8FDA0D1-D11F-4E1D-ABA6-89EB974D751C}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{DB88AEC1-6B53-4DDD-91BB-5453D2AA4431}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E6A5447C-DE97-4CF4-ACFD-04F2BFEB2B7D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F0191A51-EDF2-4013-A818-8587C8EB1081}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -36,6 +42,10 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value=""/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
+				<Property Name="Interactive Music\x64_{45D5B36F-2EF2-4020-B110-75C5B2E56160} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAA8FxAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{9F481030-FBA8-4B09-9325-15BC5EB4DC7B} - SegmentEditorZoomInfo" Type="string" Value="/xNkg3Jk1D8AAAAAAADwPwAAAAAAoEdAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{C97B1A22-F8A8-4557-9234-E6DBF8848194} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP5wViHn+jxtAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
+				<Property Name="Interactive Music\x64_{E95F9913-5996-472A-9A03-0ACB5173DDBE} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwP5wViHn+jxtAAAAAAAAA8D8AAAAAAAAAAAAAAAAAAAAA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MixingDesk\LayoutInstanceId_{62E8459A-5203-483B-BE5B-F11366D161D1}\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
@@ -131,6 +141,7 @@
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
+				<Property Name="SwitchContainerEditorLocation\{4E2D0AD9-8874-495E-8C37-ACD006569D69}\x64_Collapsed States" Type="string" Value=""/>
 				<Property Name="TabPropertyEditor\LayoutInstanceId_PropertyEditorInObjectTabLeft_{031E1E2C-DC25-4332-80C3-FFCC371AC803}\CurrentSearch" Type="string" Value=""/>
 				<Property Name="TabPropertyEditor\LayoutInstanceId_PropertyEditorInObjectTabLeft_{031E1E2C-DC25-4332-80C3-FFCC371AC803}\RecentCategoriesTopCount" Type="int32" Value="0"/>
 				<Property Name="TabPropertyEditor\LayoutInstanceId_PropertyEditorInObjectTabLeft_{031E1E2C-DC25-4332-80C3-FFCC371AC803}\VisualOptions" Type="int32" Value="2"/>

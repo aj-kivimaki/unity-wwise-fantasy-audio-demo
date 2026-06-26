@@ -125,10 +125,31 @@
 				</Folder>
 				<Folder Name="Music" ID="{BA5004A6-EB5F-4B36-86C0-0574B0740735}" ShortID="827079429">
 					<ChildrenList>
-						<Event Name="Play_Music" ID="{E6A5447C-DE97-4CF4-ACFD-04F2BFEB2B7D}"/>
+						<Event Name="Play_Music" ID="{E6A5447C-DE97-4CF4-ACFD-04F2BFEB2B7D}">
+							<ChildrenList>
+								<Action Name="" ID="{DE61D77E-EC45-4409-8570-538F94BEBE4B}" ShortID="284812732">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music" ID="{C335F818-B65A-4DD0-B8CA-04CD14D1F377}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 						<Event Name="Stop_Music" ID="{D8FDA0D1-D11F-4E1D-ABA6-89EB974D751C}"/>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_MS_Exploration" ID="{BCB38BD0-3496-4519-ADC2-F6DF0EDF029B}">
+					<ChildrenList>
+						<Action Name="" ID="{E7C4F6DA-BB85-4EBE-B791-5AE3D06F79B8}" ShortID="858140589">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MS_Exploration" ID="{9F481030-FBA8-4B09-9325-15BC5EB4DC7B}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
