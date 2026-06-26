@@ -39,6 +39,11 @@ public class MusicManager : MonoBehaviour
         AkSoundEngine.SetState("Music", "Exploration");
     }
 
+    public void SetPostCombat()
+    {
+        AkSoundEngine.SetState("Music", "PostCombat");
+    }
+
     public void SetCombat()
     {
         AkSoundEngine.SetState("Music", "Combat");

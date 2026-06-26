@@ -667,6 +667,10 @@
 								<StateRef Name="Combat" ID="{1C3A54FC-81E0-4A56-97BE-D71FE1B82B3F}"/>
 								<CustomState Name="" ID="{E43DA5E8-EB95-4E73-BDD9-4100DA54AA90}" ShortID="709278073"/>
 							</CustomState>
+							<CustomState>
+								<StateRef Name="PostCombat" ID="{9710CB08-C6A2-4D68-99EC-B93FAD94D068}"/>
+								<CustomState Name="" ID="{F42ABBAB-9A6D-4589-9B85-EE70E68D4D5B}" ShortID="543119965"/>
+							</CustomState>
 						</CustomStateList>
 					</StateInfo>
 					<ObjectLists>
@@ -728,6 +732,24 @@
 											<ReferenceList>
 												<Reference Name="EntryPathObject">
 													<ObjectRef Name="None" ID="{3FAF7B1F-9C4F-45D3-AD8F-082A54C78E03}" WorkUnitID="{647E0691-610E-4D92-8186-CCD976D7DFF8}"/>
+												</Reference>
+											</ReferenceList>
+										</PluginInnerObject>
+									</ObjectList>
+								</ObjectLists>
+							</MultiSwitchEntry>
+							<MultiSwitchEntry Name="" ID="{1FFB1C1B-6EFB-4FA4-87D8-776860F968AA}">
+								<ReferenceList>
+									<Reference Name="AudioNode">
+										<ObjectRef Name="Exploration" ID="{FD8512F6-4148-40AA-BA73-8F11FF9B75EC}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+									</Reference>
+								</ReferenceList>
+								<ObjectLists>
+									<ObjectList Name="EntryPath">
+										<PluginInnerObject Name="" ID="{D76C2C60-EABE-4B9B-A76D-372A2ABCCC1E}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+											<ReferenceList>
+												<Reference Name="EntryPathObject">
+													<ObjectRef Name="PostCombat" ID="{9710CB08-C6A2-4D68-99EC-B93FAD94D068}" WorkUnitID="{647E0691-610E-4D92-8186-CCD976D7DFF8}"/>
 												</Reference>
 											</ReferenceList>
 										</PluginInnerObject>

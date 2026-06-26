@@ -23,6 +23,7 @@ The playable experience consists of a short fantasy dungeon adventure through:
 - Exploration Corridor
 - Ancient Gate / Transition Area
 - Combat Arena
+- Throne
 - Reward Shrine
 
 The prototype is intentionally designed as an audio-focused experience, providing opportunities to demonstrate adaptive music, gameplay audio, environmental sound design, and professional Wwise implementation while maintaining a manageable development scope.
@@ -92,18 +93,27 @@ This project serves as the foundation for:
 - Multiple simultaneous ambience layers
 - Environmental audio layering workflow
 
+## Adaptive Music Systems
+
+- Exploration Music State
+- Combat Music State
+- PostCombat Music State
+- Music Switch Container
+- Music Playlist Containers
+- Gameplay-driven state transitions
+- Continuous music playback
+- Centralized MusicManager
+- Trigger-based music state changes
+
 ## Audio Architecture
 
 - Dedicated Music, Ambience, SFX, UI, and Voice audio buses
 - Property Container-based content hierarchy
 - Centralized audio routing through inheritance
-- Dedicated Music State architecture
-- Music Switch Container architecture
-- Music Playlist Container architecture
-- Centralized MusicManager architecture
-- Gameplay-driven music state management
-- Scalable audio mixing architecture
-- Foundation prepared for advanced adaptive music techniques
+- Gameplay-driven music architecture
+- Music State-driven implementation
+- Scalable adaptive music framework
+- Foundation prepared for advanced interactive music techniques
 
 ---
 
@@ -127,14 +137,15 @@ This project serves as the foundation for:
 
 ## Interactive Music
 
-- Music Switch Container
-- Music Playlist Containers
-- Music States
-- Gameplay-driven music transitions
 - Exploration music
 - Combat music
+- PostCombat state
+- Music States
+- Music Switch Container
+- Music Playlist Containers
+- Continuous music playback
+- Gameplay-driven transitions
 - Centralized MusicManager
-- Trigger-based music state switching
 
 ## Wwise Features
 
@@ -167,7 +178,7 @@ Completed
 
 ---
 
-## 🚧 Milestone 2 – Adaptive Music
+## 🚧 Milestone 2 – Adaptive Music & Technical Implementation
 
 In Progress
 
@@ -183,6 +194,7 @@ In Progress
 
 - Exploration music ✅
 - Combat music ✅
+- PostCombat state ✅
 - Gameplay-driven music state transitions ✅
 - Unity gameplay → Wwise State communication ✅
 - Trigger-based music transitions ✅
@@ -190,7 +202,8 @@ In Progress
 
 ### Remaining
 
-- Horizontal adaptive music transition polish
+- Post-combat adaptive mix
+- Transition timing polish
 - Transition stingers
 - Musical transition segments
 
@@ -200,32 +213,16 @@ In Progress
 
 Planned
 
-### Audio Assets
-
 - Replace placeholder music with original compositions
 - Replace placeholder sound effects where appropriate
-
-### Advanced Interactive Music
-
 - Vertical remixing
 - RTPC-driven combat intensity
 - Advanced transition logic
-- Musical transition stingers
-- Transition segments
-- Phrase-accurate synchronization
-
-### Mixing & DSP
-
-- Environmental DSP (EQ, reverb, spatial processing)
-- Bus-level mixing and balancing
-- Loudness and dynamic range refinement
-
-### Portfolio Production
-
+- Environmental DSP
+- Bus-level mixing
+- Loudness refinement
 - Final gameplay capture
-- Technical implementation breakdown
-- Interactive music breakdown
-- Sound design breakdown
+- Technical breakdown
 - Portfolio reel production
 
 ---
@@ -260,6 +257,12 @@ portfolio-assets/
 
 **Milestone 1 – Core Audio Foundation** is complete.
 
-**Milestone 2 – Adaptive Music** is in progress. The technical architecture for interactive music has been implemented, including Music States, Music Switch Containers, Music Playlist Containers, centralized music management, and gameplay-driven state transitions. Remaining work focuses on transition polish, musical synchronization, and stinger implementation.
+**Milestone 2 – Adaptive Music & Technical Implementation** is progressing well.
 
-**Milestone 3 – Portfolio Polish & Advanced Audio** will replace all placeholder assets with original music and sound design while adding advanced interactive music techniques such as transition segments, vertical remixing, RTPC-driven intensity, environmental DSP, final mixing, and portfolio production.
+The project now implements a complete gameplay-driven adaptive music state machine:
+
+Exploration → Combat → PostCombat
+
+Music playback remains continuous while gameplay communicates state changes through the MusicManager and Wwise Music States.
+
+Future tasks will build upon this architecture by implementing post-combat adaptive mixing, transition polish, stingers, and advanced interactive music techniques before replacing placeholder assets with original content during Milestone 3.

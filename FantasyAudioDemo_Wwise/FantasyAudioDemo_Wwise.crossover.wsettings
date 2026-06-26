@@ -53,6 +53,10 @@
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
 				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value=""/>
+				<Property Name="Music Transition List\{9F2794C1-E980-4E42-921F-7D5FDB9A3C21}\Scroll Position" Type="int32" Value="0"/>
+				<Property Name="Music Transition List\{9F2794C1-E980-4E42-921F-7D5FDB9A3C21}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{C335F818-B65A-4DD0-B8CA-04CD14D1F377}\Scroll Position" Type="int32" Value="0"/>
+				<Property Name="Music Transition List\{C335F818-B65A-4DD0-B8CA-04CD14D1F377}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{031E1E2C-DC25-4332-80C3-FFCC371AC803}" Type="string" Value="ewBGADgAQgAyADcAMAA1ADIALQBBADQARABGAC0ANAAxADgARQAtAEEAQgA1ADMALQBCAEUANwBFADIAQwA5ADMANwA0AEUANAB9AAAAAAE="/>
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{618C1FF9-37D4-45A7-AF0A-E2D511E44707}" Type="string" Value=""/>
 				<Property Name="ObjectTabPanel\x64_CurrentObjects_{826CEF9F-ACB3-45D2-8319-9C9994E4CA5C}" Type="string" Value=""/>
