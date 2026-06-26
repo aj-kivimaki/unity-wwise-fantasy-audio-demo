@@ -144,7 +144,7 @@ This project serves as the foundation for:
 - Infinite looping
 - Music States
 - Music Switch Container
-- Playlist Containers
+- Music Playlist Containers
 - MusicManager singleton
 - Unity-controlled music playback
 
@@ -178,7 +178,7 @@ Completed
 
 ---
 
-## 🚧 Milestone 2 – Adaptive Music
+## 🚧 Milestone 2 – Adaptive Music & Technical Implementation
 
 In Progress
 
@@ -188,8 +188,11 @@ In Progress
 - MusicManager singleton ✅
 - Unity gameplay → Wwise State communication ✅
 - Horizontal adaptive music implementation ✅
-- Combat music
-- Combat transition
+- Combat music implementation
+- Gameplay-driven music transitions
+- Combat complete transition
+- Shrine ambience after combat
+- Complete technical implementation of the adaptive music system
 - Profiler validation
 
 ---
@@ -198,14 +201,25 @@ In Progress
 
 Planned
 
+### Original Content
+
 - Replace placeholder music with original compositions
 - Replace placeholder sound effects where appropriate
+
+### Advanced Audio Techniques
+
 - RTPC-driven combat intensity
 - Vertical remixing and layered music
 - Combat transition stingers
-- Environmental DSP (EQ, reverb, spatial processing)
+- Environmental DSP
+  - Indoor / outdoor EQ
+  - Reverb and spatial processing
+
 - Bus-level mixing and balancing
 - Loudness and dynamic range refinement
+
+### Portfolio Presentation
+
 - Final gameplay capture
 - Technical implementation breakdown
 - Portfolio reel production
@@ -241,8 +255,10 @@ portfolio-assets/
 
 **Milestone 1 – Core Audio Foundation** is complete.
 
-**Milestone 2 – Adaptive Music** is well underway.
+**Milestone 2 – Adaptive Music & Technical Implementation** is well underway.
 
-The adaptive music foundation has now been fully implemented, including Wwise Interactive Music, Music Switch Containers, Playlist Containers, Music States, Unity integration, and a dedicated MusicManager responsible for music playback and state changes.
+The adaptive music foundation has now been implemented, including Wwise Interactive Music, Music Switch Containers, Playlist Containers, Music States, Unity integration, and a dedicated MusicManager responsible for music playback and state changes.
 
-The next phase focuses on implementing combat music, gameplay-driven music transitions, and validating the complete adaptive music workflow before moving on to RTPC-driven music intensity, vertical remixing, environmental DSP, and replacing all placeholder assets with original music and sound design.
+Milestone 2 focuses on completing the **technical implementation** of the adaptive music system using placeholder assets, including gameplay-driven music transitions, combat music, and full Unity ↔ Wwise integration.
+
+Once the implementation is complete, **Milestone 3** will replace placeholder assets with original compositions and sound design while introducing advanced game audio techniques such as RTPC-driven music intensity, vertical remixing, environmental DSP, mixing refinement, and final portfolio presentation.
