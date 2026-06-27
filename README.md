@@ -11,7 +11,7 @@ This project focuses on showcasing:
 - Sound design for gameplay and environments
 - Audio implementation in Unity
 - Wwise integration and middleware workflows
-- Technical audio design concepts including States, RTPCs, Attenuation, Reverb, Audio Busses, and dynamic mixing
+- Technical audio design concepts including States, RTPCs, Attenuation, Reverb, Audio Busses, adaptive mixing, and dynamic music systems
 
 ---
 
@@ -99,11 +99,11 @@ This project serves as the foundation for:
 - Combat Music State
 - PostCombat Music State
 - Music Switch Container
-- Music Playlist Containers
-- Gameplay-driven state transitions
+- Independent Playlist Containers
+- Gameplay-driven music state transitions
 - Continuous music playback
+- State-driven adaptive music mixing
 - Centralized MusicManager
-- Trigger-based music state changes
 
 ## Audio Architecture
 
@@ -112,6 +112,7 @@ This project serves as the foundation for:
 - Centralized audio routing through inheritance
 - Gameplay-driven music architecture
 - Music State-driven implementation
+- Independent Playlist-based adaptive mixing
 - Scalable adaptive music framework
 - Foundation prepared for advanced interactive music techniques
 
@@ -139,12 +140,13 @@ This project serves as the foundation for:
 
 - Exploration music
 - Combat music
-- PostCombat state
+- PostCombat music state
+- Continuous playback
 - Music States
 - Music Switch Container
-- Music Playlist Containers
-- Continuous music playback
+- Independent Playlist Containers
 - Gameplay-driven transitions
+- State-driven adaptive music mixing
 - Centralized MusicManager
 
 ## Wwise Features
@@ -155,6 +157,7 @@ This project serves as the foundation for:
 - Music Playlist Containers
 - Music Segments
 - Interactive Music
+- Adaptive Playlist Mixing
 - Property Containers
 - Random Containers
 - Audio Busses
@@ -187,8 +190,9 @@ In Progress
 - Adaptive music architecture ✅
 - MusicManager singleton ✅
 - Music Switch Container ✅
-- Music Playlist Containers ✅
+- Independent Playlist Containers ✅
 - Music States ✅
+- State-driven adaptive mixing ✅
 
 ### Gameplay Integration
 
@@ -202,10 +206,11 @@ In Progress
 
 ### Remaining
 
-- Post-combat adaptive mix
+- Gameplay-driven ambience transitions
+- Surface-dependent footsteps
+- Environmental DSP
 - Transition timing polish
-- Transition stingers
-- Musical transition segments
+- Voice management & optimization
 
 ---
 
@@ -218,7 +223,8 @@ Planned
 - Vertical remixing
 - RTPC-driven combat intensity
 - Advanced transition logic
-- Environmental DSP
+- Transition stingers
+- Environmental DSP refinement
 - Bus-level mixing
 - Loudness refinement
 - Final gameplay capture
@@ -257,12 +263,8 @@ portfolio-assets/
 
 **Milestone 1 – Core Audio Foundation** is complete.
 
-**Milestone 2 – Adaptive Music & Technical Implementation** is progressing well.
+**Milestone 2 – Adaptive Music & Technical Implementation** is well underway.
 
-The project now implements a complete gameplay-driven adaptive music state machine:
+The project now demonstrates a complete gameplay-driven adaptive music system based on Wwise Music States, independent Playlist Containers, continuous playback and adaptive state-driven mixing.
 
-Exploration → Combat → PostCombat
-
-Music playback remains continuous while gameplay communicates state changes through the MusicManager and Wwise Music States.
-
-Future tasks will build upon this architecture by implementing post-combat adaptive mixing, transition polish, stingers, and advanced interactive music techniques before replacing placeholder assets with original content during Milestone 3.
+The technical foundation has been designed so future milestones can replace placeholder assets, introduce transition stingers, vertical remixing and advanced adaptive music techniques without modifying gameplay code.
