@@ -8,6 +8,7 @@ public class CombatMusicTrigger : MonoBehaviour
             return;
 
         MusicManager.Instance.SetCombat();
+        AmbienceManager.Instance.StartArena();
 
         gameObject.SetActive(false);
     }

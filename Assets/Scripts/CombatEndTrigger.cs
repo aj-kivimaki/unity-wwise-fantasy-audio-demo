@@ -8,6 +8,7 @@ public class CombatEndTrigger : MonoBehaviour
             return;
 
         MusicManager.Instance.SetPostCombat();
+        AmbienceManager.Instance.StopArena();
 
         gameObject.SetActive(false);
     }
