@@ -4,6 +4,7 @@
 		<WorkUnit Name="Default Work Unit" ID="{66FF7D44-381F-4FBC-87D7-EB907992C306}" PersistMode="Standalone">
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{F8B27052-A4DF-418E-AB53-BE7E2C9374E4}">
+					<Comment>Main runtime SoundBank containing all audio required for the single playable level. Chosen to minimize complexity while remaining appropriate for the current project scope.</Comment>
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Jump" ID="{91C44042-E2FF-42A2-BDAF-455BDB3612EE}" WorkUnitID="{30FDA5BF-CA14-436C-B6E8-48EEB1DD0FD3}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Dungeon_Ambience" ID="{36F5B698-9480-42D4-9E85-C0FCBB26931E}" WorkUnitID="{30FDA5BF-CA14-436C-B6E8-48EEB1DD0FD3}" Origin="Manual" Filter="7"/>

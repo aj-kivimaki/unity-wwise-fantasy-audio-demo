@@ -1,35 +1,30 @@
 # Unity Wwise Fantasy Audio Demo
 
-An interactive game audio portfolio project exploring adaptive music, sound design, and technical audio implementation using Unity 6 and Wwise 2025.
+An interactive game audio project built with **Unity 6** and **Wwise 2025**, demonstrating adaptive music, gameplay-driven sound design, environmental acoustics, and production-oriented technical audio implementation.
 
-The project demonstrates modern game audio workflows, middleware integration, gameplay-driven systems, technical audio architecture, and professional development practices including Git, Jira and technical documentation.
+The project focuses on designing scalable audio systems using modern middleware workflows, gameplay integration, and structured development practices.
 
 ---
 
 # Project Goals
 
-The primary goal of this project is to demonstrate both creative and technical game audio skills through a complete, production-style implementation.
-
 ## Technical Goals
 
-- Gameplay-driven audio systems
-- Interactive music implementation
-- Environmental audio
-- Environmental DSP
-- Audio architecture
-- Middleware integration
-- Gameplay scripting in C#
-- Clean project organization
-- Documentation and development workflow
+- Build production-oriented gameplay audio systems
+- Demonstrate modern Wwise implementation
+- Design scalable audio architecture
+- Integrate gameplay systems using C#
+- Apply professional development workflows
+- Produce technical documentation and implementation case studies
 
 ## Audio Goals
 
 - Adaptive music
-- Dynamic ambience
-- Player sound effects
+- Dynamic environmental ambience
+- Responsive player sound effects
 - Environmental acoustics
 - Professional mixing workflow
-- Technical implementation ready for portfolio presentation
+- Original music and sound design (Milestone 3)
 
 ---
 
@@ -44,57 +39,24 @@ The primary goal of this project is to demonstrate both creative and technical g
 
 ---
 
-# Project Structure
-
-The playable experience consists of a short fantasy dungeon prototype.
-
-Areas include:
-
-- Spawn Area
-- Exploration Corridor
-- Ancient Gate
-- Combat Arena
-- Throne
-- Shrine
-
-Each location is designed to demonstrate a different aspect of interactive game audio implementation.
-
----
-
-# Current Progress
-
-## Core Systems
-
-- Unity project setup
-- Wwise integration
-- Git workflow
-- Jira workflow
-- Documentation workflow
-- Third-person controller
-
----
-
-## Gameplay Audio
-
-- Animation Event driven footsteps
-- Randomized footsteps
-- Jump sound
-- Landing sound
-- Gameplay-driven player audio
-
----
+# Current Features
 
 ## Interactive Music
 
-- Exploration state
-- Combat state
-- PostCombat state
-- Music Switch Container
-- Playlist Containers
-- Continuous playback
-- Gameplay-driven transitions
-- State-driven music system
-- MusicManager architecture
+- Exploration, Combat and Post-Combat music states
+- Gameplay-driven music transitions
+- Music Switch Container implementation
+- Playlist-based music playback
+- Centralized MusicManager architecture
+
+---
+
+## Sound Design
+
+- Animation Event-driven footsteps
+- Randomized footstep playback
+- Jump and landing sounds
+- Gameplay-driven player audio
 
 ---
 
@@ -103,132 +65,121 @@ Each location is designed to demonstrate a different aspect of interactive game 
 - Dungeon ambience
 - Arena ambience
 - Shrine ambience
-- Gameplay-driven ambience
-- AmbienceManager architecture
+- Gameplay-controlled ambience playback
+- Centralized AmbienceManager architecture
 - 3D attenuation
-- Multiple ambience layers
 
 ---
 
 ## Environmental DSP
 
 - Auxiliary Bus routing
-- RoomVerb
+- RoomVerb implementation
 - Game-Defined Auxiliary Sends
-- AkEnvironment
-- Environmental trigger volumes
-- Gameplay-driven acoustic environments
-- Player audio environmental processing
+- AkEnvironment trigger volumes
+- Environmental acoustic zones
+- Player environmental audio processing
 
 ---
 
-## Wwise Features Demonstrated
+## Technical Audio Systems
 
-- Events
-- States
-- Switch Containers
-- Playlist Containers
-- Music Segments
-- Property Containers
-- Random Containers
-- Attenuation ShareSets
-- Auxiliary Busses
-- RoomVerb
-- AkEnvironment
-- Game-Defined Auxiliary Sends
-- SoundBanks
-- Wwise Profiler
+- Wwise middleware integration
+- State-based music system
+- Gameplay trigger architecture
+- Animation Event integration
+- Auxiliary Bus architecture
+- Production-oriented SoundBank strategy
+- Runtime audio packaging review
+- Event hierarchy organization
+- Professional documentation workflow
 
 ---
 
-## Audio Architecture
+# Project Architecture
 
-### Managers
+## Managers
 
 - MusicManager
 - AmbienceManager
 
-### Gameplay
+## Gameplay
 
-- Gameplay Triggers
-- Environment Volumes
+- Music Triggers
+- Ambience Triggers
+- Acoustic Environment Volumes
 
-### Audio
+## Audio Categories
 
 - Music
 - Ambience
 - SFX
-- Voice
 - UI
+- Voice
 
-### DSP
-
-- Auxiliary Bus architecture
-- Environmental routing
-- Environmental acoustics
-
-The project separates gameplay logic from audio implementation using centralized manager classes and Wwise middleware features.
+Gameplay logic is separated from audio implementation through centralized manager classes and Wwise middleware systems, providing a scalable architecture that is easy to extend and maintain.
 
 ---
 
-# Development Roadmap
+# Development Workflow
 
-## ✅ Milestone 1 – Core Audio Foundation
+Each feature follows a production-inspired workflow:
+
+1. Jira planning
+2. Technical implementation
+3. Unity testing
+4. Wwise validation
+5. Documentation
+6. Git version control
+
+This workflow provides complete traceability from planning through implementation and validation.
+
+---
+
+# Roadmap
+
+## ✅ Milestone 1 — Audio Foundation
 
 Completed
 
-### Completed
-
 - Unity ↔ Wwise integration
-- Gameplay audio implementation
-- Player movement audio
+- Player audio
 - Footstep system
 - Animation Events
 - Basic ambience
-- Documentation workflow
-- Git workflow
-- Jira workflow
+- Development workflow
 
 ---
 
-## 🚧 Milestone 2 – Technical Audio Implementation
+## 🚧 Milestone 2 — Technical Audio Implementation
 
 In Progress
 
-### Completed
+Completed
 
-- Exploration music
-- Combat music
-- PostCombat music
-- MusicManager
+- Interactive music system
 - Gameplay-driven music transitions
 - Gameplay-driven ambience
-- AmbienceManager
 - Environmental DSP foundation
 - Auxiliary Bus routing
-- RoomVerb
-- Game-Defined Auxiliary Sends
-- AkEnvironment
-- Gameplay-driven acoustic environments
+- Acoustic environments
+- SoundBank architecture review
 
-### Remaining
+Remaining
 
-- SoundBank organization
-- Audio Bus architecture & mixing foundation
+- Audio bus architecture & mixing foundation
 - Voice management & playback optimization
-- Interactive music transition foundation
+- Interactive music refinement
 
 ---
 
-## 🎯 Milestone 3 – Portfolio Polish
+## 🎯 Milestone 3 — Portfolio Polish
 
 Planned
 
 ### Music
 
-- Original exploration music
-- Original combat music
-- Original post-combat music
+- Original soundtrack
 - Transition stingers
 - Improved transition timing
 - Combat intensity system
@@ -236,32 +187,23 @@ Planned
 
 ### Sound Design
 
-- Original footsteps
-- Material variations
-- Original ambience
-- Torch sounds
+- Original sound effects
+- Material-based footsteps
 - Environmental one-shots
 - Interactive environmental sounds
 
-### DSP
+### Audio Polish
 
-- Environment-specific reverb tuning
-- Additional acoustic environments
-- Final environmental mixing
-
-### Mixing
-
-- Final balancing
-- Loudness refinement
+- Environment-specific DSP tuning
+- Final mix
+- Loudness balancing
 - Bus processing
-- Polish
 
 ### Portfolio
 
 - Gameplay capture
-- Technical breakdown
-- Case studies
-- Portfolio pages
+- Technical case studies
+- Implementation breakdown
 - Demo reel
 
 ---
@@ -293,59 +235,16 @@ portfolio-assets/
 
 ---
 
-# Technical Highlights
+# Project Scope
 
-This project currently demonstrates:
+The project demonstrates the complete implementation of gameplay audio systems, from planning and architecture to gameplay integration, validation and documentation.
 
-- Gameplay-driven interactive music
-- Gameplay-driven environmental ambience
-- Gameplay-driven environmental DSP
-- State-based music implementation
-- Manager-based audio architecture
-- Unity trigger integration
-- Wwise middleware implementation
-- Environmental acoustics
-- Auxiliary Bus routing
-- Game-Defined Auxiliary Sends
-- Animation Event driven audio
-- Professional project organization
-- Git version control
-- Jira task management
-- Technical documentation workflow
-
----
-
-# Development Workflow
-
-Every implementation task follows the same workflow:
-
-1. Jira planning
-2. Technical implementation
-3. Unity testing
-4. Wwise validation
-5. Wwise Profiler verification
-6. Screenshots
-7. Development log
-8. Technical documentation
-9. README update
-10. Git commit
-
-This mirrors a production-oriented development process and provides complete traceability for every implemented feature.
-
----
-
-# Current Status
-
-Milestone 2 is progressing according to the planned roadmap.
-
-The project now demonstrates:
+Current areas of focus include:
 
 - Interactive music
 - Gameplay-driven ambience
-- Environmental DSP
-- Gameplay-controlled acoustic environments
-- Centralized audio managers
-- Professional Wwise implementation
-- Scalable technical audio architecture
+- Environmental acoustics
+- Technical middleware implementation
+- Production-oriented project organization
 
-The remaining Milestone 2 work focuses on production-oriented systems such as SoundBank organization, bus architecture, voice optimization and finalizing the technical implementation before moving into the artistic polish phase of Milestone 3.
+Future milestones will expand the project with original music, sound design, advanced adaptive systems, final mixing and comprehensive technical case studies.

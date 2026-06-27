@@ -84,28 +84,6 @@
 				</Folder>
 				<Folder Name="Player" ID="{A46791E2-DA4F-42B0-B5CE-C36AA9250D3C}" ShortID="230706371">
 					<ChildrenList>
-						<Event Name="Play_Jump" ID="{91C44042-E2FF-42A2-BDAF-455BDB3612EE}">
-							<ChildrenList>
-								<Action Name="" ID="{BD636C49-72CE-4BF9-B3D1-3128752B0AC8}" ShortID="400127930">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Jump" ID="{02A26272-75E1-49DC-B113-BAEEC6FB9A32}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Landing" ID="{3452A97F-50F4-4506-9803-8A5EE50BCC1B}">
-							<ChildrenList>
-								<Action Name="" ID="{BBBCC275-92E4-4A4C-B317-2A3073EC9BD7}" ShortID="456220656">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Landing" ID="{F04F3094-8E99-43B7-84B6-11EE0C6C2B3F}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Folder Name="Footsteps" ID="{E9F2CB1C-D89E-4B54-AB34-5C42E220F1F9}" ShortID="129293240">
 							<ChildrenList>
 								<Event Name="Play_RC_Footsteps_Stone" ID="{8158051C-48B0-485B-97F4-6DD951D60965}">
@@ -114,6 +92,36 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="RC_Footsteps_Stone" ID="{76878166-0183-4C21-A9A9-0BED5A4C4C29}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Jump" ID="{BA9BF6ED-DC27-40CA-920F-BBC2FB6D5BE0}" ShortID="332941535">
+							<ChildrenList>
+								<Event Name="Play_Jump" ID="{91C44042-E2FF-42A2-BDAF-455BDB3612EE}">
+									<ChildrenList>
+										<Action Name="" ID="{BD636C49-72CE-4BF9-B3D1-3128752B0AC8}" ShortID="400127930">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Jump" ID="{02A26272-75E1-49DC-B113-BAEEC6FB9A32}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Landing" ID="{C50589F5-B91F-4961-87CE-1F317B244483}" ShortID="678511847">
+							<ChildrenList>
+								<Event Name="Play_Landing" ID="{3452A97F-50F4-4506-9803-8A5EE50BCC1B}">
+									<ChildrenList>
+										<Action Name="" ID="{BBBCC275-92E4-4A4C-B317-2A3073EC9BD7}" ShortID="456220656">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Landing" ID="{F04F3094-8E99-43B7-84B6-11EE0C6C2B3F}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
