@@ -1,0 +1,114 @@
+# Voice Management & Playback Rules
+
+## Objective
+
+Review the project's voice management configuration and establish appropriate playback rules for gameplay audio.
+
+The implementation focuses on preventing unnecessary voice duplication while relying on gameplay systems to manage long-lived audio such as music and ambience.
+
+---
+
+## Voice Management Philosophy
+
+Voice management should be used to control repetitive, high-frequency sounds that may be triggered rapidly during gameplay.
+
+Long-lived systems such as music and ambience are managed through dedicated gameplay managers and therefore do not rely on playback limits.
+
+---
+
+## Player Footsteps
+
+Playback Limit was enabled for the Footsteps Random Container.
+
+Configuration:
+
+* Playback Limit: Enabled
+* Maximum Voices: 4
+* Scope: Game Object
+* If Limit Reached: Kill Voice
+* If Priority Equal: Discard Oldest
+
+Virtual Voice and Playback Priority continue to inherit default project behaviour.
+
+This prevents excessive voice accumulation while allowing natural overlap between consecutive footsteps.
+
+---
+
+## Jump
+
+Playback Limit was enabled.
+
+Configuration:
+
+* Playback Limit: Enabled
+* Maximum Voices: 1
+* Scope: Game Object
+* If Limit Reached: Kill Voice
+
+Only one jump sound may play simultaneously for a single player.
+
+---
+
+## Landing
+
+Playback Limit was enabled.
+
+Configuration:
+
+* Playback Limit: Enabled
+* Maximum Voices: 1
+* Scope: Game Object
+* If Limit Reached: Kill Voice
+
+Landing sounds should never overlap with themselves during normal gameplay.
+
+---
+
+## Music
+
+Playback limits remain disabled.
+
+Interactive music playback is already controlled by the MusicManager, which guarantees that only one playlist is active at a time.
+
+Introducing voice limits would duplicate existing gameplay logic without providing additional value.
+
+---
+
+## Ambience
+
+Playback limits remain disabled.
+
+Ambient playback is managed by the AmbienceManager, ensuring that only the appropriate environmental ambience is active.
+
+Voice limiting is therefore unnecessary.
+
+---
+
+## ShareSets
+
+Voice ShareSets were reviewed conceptually but were not implemented.
+
+For the current project size, configuring individual gameplay objects provides greater clarity while keeping the implementation straightforward.
+
+In larger productions, ShareSets would allow common playback rules to be shared across multiple audio objects.
+
+---
+
+## Validation
+
+Verified:
+
+* Footsteps behave naturally during continuous movement.
+* Jump playback cannot stack unnecessarily.
+* Landing playback remains consistent.
+* Music transitions continue to function correctly.
+* Ambient transitions remain unaffected.
+* No regressions observed during gameplay testing.
+
+---
+
+## Outcome
+
+The project now contains sensible voice management rules that match the current gameplay implementation while avoiding unnecessary middleware complexity.
+
+Voice management is used where it provides clear value and omitted where dedicated gameplay systems already manage playback.

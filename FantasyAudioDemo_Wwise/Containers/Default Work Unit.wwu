@@ -130,13 +130,25 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE998976-A8A5-4601-AA2E-3B317C788248}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{78E3C732-37E2-4E36-A912-A96DA32077FA}" WorkUnitID="{83E8CD34-2E71-4A2B-AC8B-C975DA201038}"/>
+							<ObjectRef Name="Player" ID="{B0BB6F03-34B4-42AB-86C0-28AB7E599F6A}" WorkUnitID="{83E8CD34-2E71-4A2B-AC8B-C975DA201038}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<Folder Name="Footsteps" ID="{8539EA1A-B5B9-4698-B466-9C5BE140B421}" ShortID="663281507">
 							<ChildrenList>
 								<RandomSequenceContainer Name="RC_Footsteps_Stone" ID="{76878166-0183-4C21-A9A9-0BED5A4C4C29}" ShortID="195639075">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE998976-A8A5-4601-AA2E-3B317C788248}"/>
@@ -329,6 +341,18 @@
 						<Folder Name="Jump" ID="{531F6443-76F2-4E34-B44F-0A485EA6DC00}" ShortID="591971448">
 							<ChildrenList>
 								<Sound Name="Jump" ID="{02A26272-75E1-49DC-B113-BAEEC6FB9A32}" ShortID="23919031">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE998976-A8A5-4601-AA2E-3B317C788248}"/>
@@ -361,6 +385,18 @@
 						<Folder Name="Landing" ID="{17685A34-2B9F-4BE6-8CF6-0A955E3DD2C2}" ShortID="1016244539">
 							<ChildrenList>
 								<Sound Name="Landing" ID="{F04F3094-8E99-43B7-84B6-11EE0C6C2B3F}" ShortID="355555417">
+									<PropertyList>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE998976-A8A5-4601-AA2E-3B317C788248}"/>

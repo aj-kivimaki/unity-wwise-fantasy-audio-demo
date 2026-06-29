@@ -1,0 +1,64 @@
+# Devlog 019 — Voice Management & Playback Rules
+
+## Overview
+
+Reviewed voice management settings across the project to establish predictable playback behaviour and prevent unnecessary voice duplication.
+
+The task focused on using Wwise voice management where appropriate while avoiding redundant configuration for systems already controlled by gameplay logic.
+
+---
+
+## Work Completed
+
+* Reviewed playback limit settings.
+* Configured player footsteps.
+* Configured jump playback.
+* Configured landing playback.
+* Reviewed music playback behaviour.
+* Reviewed ambience playback behaviour.
+* Discussed production use of Voice ShareSets.
+* Validated runtime behaviour.
+
+---
+
+## Decisions
+
+### Footsteps
+
+A maximum of four simultaneous footsteps was selected to allow natural overlap while preventing excessive accumulation during rapid movement.
+
+### Jump
+
+Limited to a single active voice per player.
+
+### Landing
+
+Limited to a single active voice per player.
+
+### Music
+
+Playback limits remain disabled.
+
+Music playback is already controlled by the MusicManager, making additional voice limiting unnecessary.
+
+### Ambience
+
+Playback limits remain disabled.
+
+Ambient playback is managed by the AmbienceManager and therefore does not require middleware-based voice limiting.
+
+---
+
+## Lessons Learned
+
+Voice management should complement gameplay systems rather than replace them.
+
+Short gameplay sounds benefit from playback limits, while long-lived systems such as music and ambience are better managed through dedicated game logic.
+
+Understanding where responsibilities belong results in a cleaner and more maintainable audio architecture.
+
+---
+
+## Outcome
+
+The project now applies voice management selectively, demonstrating practical middleware usage while maintaining a simple and scalable implementation.

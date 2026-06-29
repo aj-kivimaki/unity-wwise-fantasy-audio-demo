@@ -37,6 +37,9 @@
 									</ValueList>
 								</Property>
 							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Player" ID="{B0BB6F03-34B4-42AB-86C0-28AB7E599F6A}"/>
+							</ChildrenList>
 						</Bus>
 						<Bus Name="UI" ID="{45306B70-EDC3-41FE-BB62-607FB35B57B4}">
 							<PropertyList>
