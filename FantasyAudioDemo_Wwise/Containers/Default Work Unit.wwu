@@ -624,7 +624,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="nin-loop" ID="{BD011DF6-D6FB-47D1-A996-FA56BAA0D258}" ShortID="590611257">
+										<MusicTrack Name="combat" ID="{BD011DF6-D6FB-47D1-A996-FA56BAA0D258}" ShortID="590611257">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{83E8CD34-2E71-4A2B-AC8B-C975DA201038}"/>
@@ -709,7 +709,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Segment">
-															<ObjectRef Name="MS_Exploration" ID="{83A01D17-6F6E-40A0-864B-E1D9C3C35633}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
+															<ObjectRef Name="MS_PostCombat" ID="{83A01D17-6F6E-40A0-864B-E1D9C3C35633}" WorkUnitID="{9761A626-0311-4A24-B83B-33EDED7F7100}"/>
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
@@ -734,7 +734,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="MS_Exploration" ID="{83A01D17-6F6E-40A0-864B-E1D9C3C35633}" ShortID="7207457">
+								<MusicSegment Name="MS_PostCombat" ID="{83A01D17-6F6E-40A0-864B-E1D9C3C35633}" ShortID="7207457">
 									<PropertyList>
 										<Property Name="EndPosition" Type="Real64" Value="39428.5941043084"/>
 									</PropertyList>

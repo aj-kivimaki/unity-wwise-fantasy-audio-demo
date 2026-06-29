@@ -1,0 +1,13 @@
+# DevLog 020 – Interactive Music Review
+
+Today focused on reviewing the interactive music implementation rather than expanding it.
+
+The review covered the complete Unity and Wwise architecture, including MusicManager, State Groups, Playlist Containers, Music Segments, Events, and routing.
+
+The system required very few changes, confirming that the architectural decisions made throughout Milestone 2 resulted in a clean and maintainable implementation.
+
+The only modifications were removing an unused Play_MS_Exploration event and renaming the reused exploration music segment inside the PostCombat playlist to better communicate design intent.
+
+The review also confirmed that Unity controls gameplay state while Wwise controls playback logic, keeping responsibilities clearly separated.
+
+Interactive Music implementation is now considered complete for Milestone 2.

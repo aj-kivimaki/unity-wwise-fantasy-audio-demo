@@ -1,165 +1,234 @@
-# Milestone 2 – Adaptive Music Architecture
+# Milestone 2 – Adaptive Audio Systems
 
-## Objective
+## Overview
 
-Implement a horizontal adaptive music system using Wwise States to respond to major gameplay events.
+Milestone 2 focused on transforming the project from a collection of individual audio features into a cohesive gameplay-driven audio architecture.
 
-The focus of this milestone is technical implementation rather than final musical content. Placeholder music will be used initially and replaced with original compositions during Milestone 3.
+The objective was not to produce a final mix or complete sound design, but to establish the technical systems that will support future creative work.
+
+By the end of this milestone, the project contains a complete middleware foundation for interactive music, gameplay audio, environmental ambience, environmental DSP, audio routing, voice management, and asset organization.
 
 ---
 
-## Gameplay Flow
+# Milestone Goals
+
+The primary objectives for Milestone 2 were:
+
+- Implement adaptive music.
+- Introduce gameplay-driven ambience.
+- Establish environmental acoustics.
+- Create a scalable audio bus hierarchy.
+- Review asset organization.
+- Configure voice management.
+- Build maintainable Unity ↔ Wwise communication.
+
+All planned objectives were completed.
+
+---
+
+# Completed Systems
+
+## Interactive Music
+
+Implemented a complete horizontal adaptive music workflow using Wwise Interactive Music.
+
+Features include:
+
+- Music States
+- Switch Container
+- Playlist Containers
+- Music Segments
+- Continuous playback
+- Gameplay-driven state changes
+
+Unity communicates gameplay intent while Wwise manages playback.
+
+---
+
+## Gameplay Audio
+
+Expanded player audio implementation with:
+
+- Randomized footsteps
+- Jump
+- Landing
+
+Movement sounds are integrated through gameplay events and animation while remaining independent from middleware implementation details.
+
+---
+
+## Environmental Ambience
+
+Implemented a centralized AmbienceManager responsible for environmental playback.
+
+Current environments include:
+
+- Dungeon
+- Arena
+- Shrine
+
+Ambient playback now responds directly to player progression through the level.
+
+---
+
+## Environmental DSP
+
+Implemented gameplay-driven environmental acoustics using:
+
+- Auxiliary Bus
+- RoomVerb
+- AkEnvironment
+- Game-Defined Auxiliary Sends
+
+Player sound effects automatically receive environmental processing based on the active acoustic space.
+
+---
+
+## Audio Routing
+
+Established a scalable bus hierarchy.
 
 ```text
-Spawn
-    │
-    ▼
-Exploration
-    │
-    ▼
-Ancient Gate
-    │
-    ▼
-Combat Arena
-    │
-    ▼
-Boss Defeated
-    │
-    ▼
-Reward Shrine
+Main Audio Bus
+├── Music
+├── Ambience
+├── SFX
+│   └── Player
+├── UI
+├── Voice
+└── AUX_Corridor
 ```
 
----
-
-## Music Design
-
-### Exploration
-
-- Begins automatically when the level starts.
-- Plays throughout the Spawn Area and Exploration Corridor.
-
-### Combat
-
-- Triggered when the player enters the Ancient Gate / Combat Arena.
-- Begins with a short combat transition stinger.
-- Transitions into a looping combat cue.
-
-### Boss Defeat
-
-- Combat music stops when the boss is defeated.
-- No new music begins.
-- The player enters a calm reward space supported solely by the shrine ambience.
-
-This creates a clear emotional contrast between combat and the conclusion of the demo.
+The hierarchy separates gameplay systems into logical mix categories while remaining intentionally simple.
 
 ---
 
-## Music State Architecture
+## Voice Management
 
-### State Group
+Reviewed playback behaviour for gameplay sounds.
 
-Music_State
+Implemented playback limits for:
 
-### States
+- Footsteps
+- Jump
+- Landing
 
-- Exploration
-- Combat
-
----
-
-## Unity Responsibilities
-
-Unity communicates gameplay state only.
-
-Examples:
-
-- Level Start → Exploration
-- Enter Combat Arena → Combat
-- Boss Defeated → Stop Music
-
-Unity never selects individual music assets directly.
+Music and ambience intentionally rely on gameplay logic rather than middleware voice limiting.
 
 ---
 
-## Wwise Responsibilities
+## Asset Organization
 
-Wwise is responsible for:
+Reviewed the overall Wwise project structure.
 
-- Music playback
-- Music state management
+Implemented:
+
+- Consistent naming
+- Logical content hierarchy
+- Reusable ShareSets
+- Organized events
+- Single SoundBank strategy
+
+The project now follows a consistent organizational structure suitable for future expansion.
+
+---
+
+# Architectural Decisions
+
+Several important design decisions were made during this milestone.
+
+## Gameplay communicates intent
+
+Unity communicates gameplay events and state changes.
+
+Wwise controls playback behaviour.
+
+---
+
+## Middleware owns audio
+
+Playback logic remains inside Wwise whenever possible.
+
+Unity never selects individual music assets or controls DSP processing directly.
+
+---
+
+## Simplicity over complexity
+
+The project intentionally avoids unnecessary abstraction.
+
+Additional systems are introduced only when they provide clear architectural value.
+
+---
+
+## Future scalability
+
+Every implemented system was designed so that additional content can be introduced without restructuring the project.
+
+---
+
+# Technical Features
+
+By the end of Milestone 2 the project demonstrates:
+
+- Unity 6 + Wwise integration
+- Interactive Music
+- Music States
+- Switch Containers
+- Playlist Containers
+- Music Segments
+- Random Containers
+- Gameplay-driven ambience
+- Trigger-based audio events
+- Auxiliary Busses
+- RoomVerb
+- Attenuation ShareSets
+- Environmental acoustics
+- Audio bus hierarchy
+- Voice management
+- SoundBank organization
+- Gameplay-driven architecture
+
+---
+
+# Lessons Learned
+
+This milestone reinforced several key implementation principles.
+
+- Gameplay systems should communicate intent rather than playback details.
+- Middleware should own audio behaviour whenever possible.
+- A simple architecture is easier to maintain than an over-engineered one.
+- Consistent naming and organization significantly improve project readability.
+- Technical foundations should be completed before creative polish.
+
+These principles guided every implementation decision throughout the milestone.
+
+---
+
+# Preparing for Milestone 3
+
+With the technical architecture complete, the project is ready to shift its focus from system implementation to creative development.
+
+Planned areas of work include:
+
+- Original soundtrack
+- Original sound effects
+- Material-dependent footsteps
 - Transition stingers
-- Music routing
-- Future transition timing
-- Adaptive music behavior
+- Vertical remixing
+- Combat intensity
+- Environmental sound design
+- Final gameplay mix
+- Overall polish
+
+No major architectural changes are expected before these features are implemented.
 
 ---
 
-## Planned Wwise Hierarchy
+# Outcome
 
-### Property Containers
+Milestone 2 successfully established the technical foundation of the project.
 
-- Music
+The resulting architecture demonstrates production-oriented middleware integration, clean separation between gameplay and audio systems, and a scalable structure capable of supporting future expansion.
 
-### Virtual Folders
-
-- Exploration
-- Combat
-- Stingers
-
-### Events
-
-- Play_Music
-- Stop_Music
-
-### State Group
-
-Music_State
-
-States
-
-- Exploration
-- Combat
-
----
-
-## Milestone Goals
-
-- Design adaptive music architecture
-- Implement Wwise Music States
-- Implement exploration music
-- Implement combat music
-- Implement combat transition stinger
-- Connect Unity gameplay events to Wwise States
-- Stop combat music when the boss is defeated
-- Allow shrine ambience to become the sole environmental audio at the end of the demo
-- Validate the complete adaptive music workflow using the Wwise Profiler
-
----
-
-## Future Expansion (Milestone 3)
-
-Once the adaptive music system is complete:
-
-- Replace placeholder music with original compositions.
-- Replace placeholder sound effects where appropriate.
-- Implement RTPC-driven combat intensity.
-- Explore layered music using vertical remixing techniques.
-- Refine transition timing and musical phrasing.
-- Implement environmental DSP processing (EQ, reverb, and spatial effects).
-- Balance and mix the project using dedicated audio buses.
-- Fine-tune overall loudness and dynamic range.
-- Capture polished gameplay footage for the portfolio.
-- Produce a technical implementation breakdown demonstrating the Unity ↔ Wwise workflow.
-
----
-
-## Expected Learning Outcomes
-
-By completing this milestone, the project will demonstrate:
-
-- Wwise State-based adaptive music
-- Horizontal music transitions
-- Transition stinger implementation
-- Unity-driven music state management
-- Scalable adaptive music architecture
-- Professional middleware workflow suitable for game audio production
+With the core systems in place, the project is well positioned to enter its final development phase, where the emphasis will shift from building audio systems to refining the player experience through original content and polish.
