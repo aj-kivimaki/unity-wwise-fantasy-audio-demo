@@ -20,22 +20,12 @@
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="2"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 						</Bus>
 						<Bus Name="SFX" ID="{78E3C732-37E2-4E36-A912-A96DA32077FA}">
 							<PropertyList>
 								<Property Name="Color" Type="int16" Value="8"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-12</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ChildrenList>
 								<Bus Name="Player" ID="{B0BB6F03-34B4-42AB-86C0-28AB7E599F6A}"/>
